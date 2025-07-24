@@ -1,4 +1,9 @@
-const Hello = (props: { text: string; onClick: () => void }) => {
+type HelloProps = {
+  text: string;
+  onClick: () => void;
+};
+
+const Hello = (props: HelloProps) => {
   const { text, onClick } = props;
 
   return (
