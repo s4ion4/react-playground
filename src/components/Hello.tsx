@@ -9,6 +9,7 @@ const signInContext = React.createContext("");
 
 const Hello = (props: HelloProps) => {
   const { text, onClick } = props;
+  const [count, setCount] = React.useState(0);
 
   return (
     <signInContext.Consumer>
@@ -17,6 +18,11 @@ const Hello = (props: HelloProps) => {
           <div>
             <h1>{text}</h1>
             <button onClick={onClick}>{contextValue}</button>
+            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button onClick={() => setCount((prevCount) => prevCount - 1)}>
+              Decrement
+            </button>
+            <p>Count: {count}</p>
           </div>
         );
       }}
