@@ -1,8 +1,5 @@
-const Hello = () => {
-  const onClick = () => {
-    console.log("Hello, World!");
-  };
-  const text = "Hello, World!";
+const Hello = (props: { text: string; onClick: () => void }) => {
+  const { text, onClick } = props;
 
   return (
     <div>
@@ -12,4 +9,12 @@ const Hello = () => {
   );
 };
 
-export default Hello;
+const Greeting = () => {
+  const onClick = () => {
+    console.log("Button clicked!");
+  };
+
+  return <Hello text="Hello world!" onClick={onClick} />;
+};
+
+export default Greeting;
