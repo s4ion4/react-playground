@@ -4,6 +4,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Hello from "./components/Hello";
 import Counter from "./components/Counter";
+import Parent from "./components/Parent";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,6 +13,7 @@ root.render(
   <React.StrictMode>
     <Hello />
     <Counter />
+    <Parent />
   </React.StrictMode>
 );
 
