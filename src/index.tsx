@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import Hello from "./components/Hello";
 import Counter from "./components/Counter";
 import Parent from "./components/Parent";
+import { UseCallbackExample } from "./components/UseCallback";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -14,6 +15,7 @@ root.render(
     <Hello />
     <Counter />
     <Parent />
+    <UseCallbackExample />
   </React.StrictMode>
 );
 
