@@ -6,6 +6,7 @@ import Hello from "./components/Hello";
 import Counter from "./components/Counter";
 import Parent from "./components/Parent";
 import { UseCallbackExample } from "./components/UseCallback";
+import { UseMemoSample } from "./components/UseMemo";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,6 +17,7 @@ root.render(
     <Counter />
     <Parent />
     <UseCallbackExample />
+    <UseMemoSample />
   </React.StrictMode>
 );
 
