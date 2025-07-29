@@ -7,17 +7,19 @@ import Counter from "./components/Counter";
 import Parent from "./components/Parent";
 import { UseCallbackExample } from "./components/UseCallback";
 import { UseMemoSample } from "./components/UseMemo";
+import { UseEffectSample } from "./components/UseEffect";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Hello />
+    {/* <Hello />
     <Counter />
     <Parent />
     <UseCallbackExample />
-    <UseMemoSample />
+    <UseMemoSample /> */}
+    <UseEffectSample />
   </React.StrictMode>
 );
 
