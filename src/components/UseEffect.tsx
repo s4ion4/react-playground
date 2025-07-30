@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 const UPDATE_CYCLE = 1000;
 
@@ -32,7 +32,14 @@ export const UseEffectSample = () => {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   const savedLocale = localStorage.getItem(KEY_LOCALE);
+  //   if (savedLocale !== null) {
+  //     setLocale(getLocaleFromString(savedLocale));
+  //   }
+  // }, []);
+
+  useLayoutEffect(() => {
     const savedLocale = localStorage.getItem(KEY_LOCALE);
     if (savedLocale !== null) {
       setLocale(getLocaleFromString(savedLocale));
