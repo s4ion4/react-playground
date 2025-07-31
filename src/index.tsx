@@ -8,6 +8,7 @@ import Parent from "./components/Parent";
 import { UseCallbackExample } from "./components/UseCallback";
 import { UseMemoSample } from "./components/UseMemo";
 import { UseEffectSample } from "./components/UseEffect";
+import { UseContextParent } from "./components/UseContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -18,8 +19,9 @@ root.render(
     <Counter />
     <Parent />
     <UseCallbackExample />
-    <UseMemoSample /> */}
-    <UseEffectSample />
+    <UseMemoSample />
+    <UseEffectSample /> */}
+    <UseContextParent />
   </React.StrictMode>
 );
 
